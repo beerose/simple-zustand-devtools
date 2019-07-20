@@ -1,0 +1,45 @@
+{
+  "name": "simple-zustand-devtools",
+  "author": "Aleksandra Sikora",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "umd:main": "dist/simple-zustand-devtools.umd.production.js",
+  "module": "dist/simple-zustand-devtools.es.production.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "description": "Devtools for Zustand",
+  "repository": "blackdahila/simple-zustand-devtools",
+  "keywords": [
+    "react",
+    "zustand",
+    "devtools"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test"
+  },
+  "peerDependencies": {
+    "@types/react": ">=16.8.23",
+    "@types/react-dom": ">=16.8.4",
+    "react": ">=16.8.6",
+    "react-dom": ">=16.8.6",
+    "zustand": ">=1.0.2"
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "pretty-quick": "^1.10.0",
+    "tsdx": "^0.5.6",
+    "typescript": "^3.4.5"
+  }
+}
