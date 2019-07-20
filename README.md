@@ -2,6 +2,8 @@
 
 Inspect your [zustand](https://github.com/react-spring/zustand) store in React DevTools 🐻⚛️
 
+<img width="500" src="/assets/devtools.png"/>
+
 ## Usage
 
 ```ts
