@@ -7,10 +7,10 @@ Inspect your [zustand](https://github.com/react-spring/zustand) store in React D
 ## Usage
 
 ```ts
-import createStore from 'zustand';
+import create from 'zustand';
 import { mountStoreDevtool } from 'simple-zustand-devtools';
 
-export const [useStore, store] = createStore(set => {
+export const useStore = create(set => {
   // create your zustand store here
 });
 
