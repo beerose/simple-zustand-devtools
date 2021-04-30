@@ -7,15 +7,34 @@ Inspect your [zustand](https://github.com/react-spring/zustand) store in React D
 ## Usage
 
 ```ts
-import createStore from 'zustand';
+import create from 'zustand';
 import { mountStoreDevtool } from 'simple-zustand-devtools';
 
-export const [useStore, store] = createStore(set => {
+export const useStore = create(set => {
   // create your zustand store here
 });
 
 if (process.env.NODE_ENV === 'development') {
   mountStoreDevtool('Store', store);
+}
+```
+
+### mount more than one store 
+
+```ts
+import create from 'zustand';
+import { mountStoreDevtool } from 'simple-zustand-devtools';
+
+export const useSeparateStore = create((set, get) => {
+  // create your zustand store here
+});
+
+if (process.env.NODE_ENV === 'development') {
+  let separateRoot = document.createElement('div');
+  separateRoot.id = 'simple-zustand-devtools2';
+  document.body.appendChild(separateRoot);
+  
+  mountStoreDevtool('SeparateStore', store);
 }
 ```
 
