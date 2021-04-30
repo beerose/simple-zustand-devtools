@@ -38,7 +38,7 @@ if (process.env.NODE_ENV === 'development') {
 }
 ```
 
-## Instalation
+## Installation
 
 ```sh
 yarn add simple-zustand-devtools --dev
