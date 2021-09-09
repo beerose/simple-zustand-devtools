@@ -15,11 +15,11 @@ export const useStore = create(set => {
 });
 
 if (process.env.NODE_ENV === 'development') {
-  mountStoreDevtool('Store', store);
+  mountStoreDevtool('Store', useStore);
 }
 ```
 
-### mount more than one store 
+### Mount more than one store 
 
 ```ts
 import create from 'zustand';
@@ -34,7 +34,7 @@ if (process.env.NODE_ENV === 'development') {
   separateRoot.id = 'simple-zustand-devtools2';
   document.body.appendChild(separateRoot);
   
-  mountStoreDevtool('SeparateStore', store);
+  mountStoreDevtool('SeparateStore', useSeparateStore);
 }
 ```
 
