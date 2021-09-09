@@ -34,10 +34,10 @@ export function mountStoreDevtool(
   (ZustandDevtool as any).displayName = `((${storeName})) devtool`;
 
   if (!rootElement) {
-    let root = document.getElementById('simple-zustand-devtools');
+    let root = document.getElementById(`simple-zustand-devtools-${storeName}`);
     if (!root) {
       root = document.createElement('div');
-      root.id = 'simple-zustand-devtools';
+      root.id = `simple-zustand-devtools-${storeName}`;
     }
 
     document.body.appendChild(root);
