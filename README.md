@@ -15,7 +15,30 @@ export const useStore = create(set => {
 });
 
 if (process.env.NODE_ENV === 'development') {
-  mountStoreDevtool('Store', store);
+  mountStoreDevtool('Store', useStore);
+}
+```
+
+### Mount more than one store
+
+`mountStoreDevtool` creates a new HTML element with `id`: `simple-zustand-devtools-${storeName}`, where `storeName` is a name provided as the first argument. You can mount more than one store, as long as store names remain unique. For example:
+
+```ts
+import create from 'zustand';
+import { mountStoreDevtool } from 'simple-zustand-devtools';
+
+export const useStore1 = create((set, get) => {
+  // create your zustand store here
+});
+
+export const useStore2 = create((set, get) => {
+  // create your zustand store here
+});
+
+if (process.env.NODE_ENV === 'development') {
+  mountStoreDevtool('Store1', useStore1);
+
+  mountStoreDevtool('Store2', useStore2);
 }
 ```
 
