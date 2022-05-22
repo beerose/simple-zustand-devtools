@@ -42,25 +42,6 @@ if (process.env.NODE_ENV === 'development') {
 }
 ```
 
-### mount more than one store 
-
-```ts
-import create from 'zustand';
-import { mountStoreDevtool } from 'simple-zustand-devtools';
-
-export const useSeparateStore = create((set, get) => {
-  // create your zustand store here
-});
-
-if (process.env.NODE_ENV === 'development') {
-  let separateRoot = document.createElement('div');
-  separateRoot.id = 'simple-zustand-devtools2';
-  document.body.appendChild(separateRoot);
-  
-  mountStoreDevtool('SeparateStore', store);
-}
-```
-
 ## Installation
 
 ```sh
