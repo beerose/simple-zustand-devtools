@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { render } from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { StoreApi } from 'zustand';
 
 type ZustandStore = StoreApi<Record<string | number | symbol, any>>;
@@ -43,12 +43,13 @@ export function mountStoreDevtool(
     document.body.appendChild(root);
     rootElement = root;
   }
-
+  const newRoot = createRoot(rootElement)
   const renderDevtool = (state: StoreState | void) => {
     if (!state) {
       return;
     }
-    render(<ZustandDevtool {...state} />, rootElement!);
+    // render(<ZustandDevtool {...state} />, rootElement!);
+    newRoot.render(<ZustandDevtool {...state} />);
     externalUpdates.count += 1;
   };
 

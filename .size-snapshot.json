@@ -1,0 +1,36 @@
+{
+  "/Users/david/Documents/dev/simple-zustand-devtools/dist/simple-zustand-devtools.cjs.development.js": {
+    "bundled": 1684,
+    "minified": 783,
+    "gzipped": 442
+  },
+  "/Users/david/Documents/dev/simple-zustand-devtools/dist/simple-zustand-devtools.cjs.production.js": {
+    "bundled": 1684,
+    "minified": 783,
+    "gzipped": 442
+  },
+  "/Users/david/Documents/dev/simple-zustand-devtools/dist/simple-zustand-devtools.es.production.js": {
+    "bundled": 1488,
+    "minified": 624,
+    "gzipped": 379,
+    "treeshaked": {
+      "rollup": {
+        "code": 39,
+        "import_statements": 39
+      },
+      "webpack": {
+        "code": 1056
+      }
+    }
+  },
+  "/Users/david/Documents/dev/simple-zustand-devtools/dist/simple-zustand-devtools.umd.development.js": {
+    "bundled": 2024,
+    "minified": 861,
+    "gzipped": 493
+  },
+  "/Users/david/Documents/dev/simple-zustand-devtools/dist/simple-zustand-devtools.umd.production.js": {
+    "bundled": 2024,
+    "minified": 861,
+    "gzipped": 493
+  }
+}
