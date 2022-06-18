@@ -24,10 +24,10 @@
     "test": "tsdx test"
   },
   "peerDependencies": {
-    "@types/react": ">=16.8.23",
-    "@types/react-dom": ">=16.8.4",
-    "react": ">=16.8.6",
-    "react-dom": ">=16.8.6",
+    "@types/react": ">=18.0.0",
+    "@types/react-dom": ">=18.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
     "zustand": ">=1.0.2"
   },
   "prettier": {
@@ -37,12 +37,12 @@
     "trailingComma": "es5"
   },
   "devDependencies": {
-    "@types/react": "^17.0.20",
-    "@types/react-dom": "^17.0.9",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
     "prettier": "^1.17.0",
     "pretty-quick": "^1.10.0",
     "tsdx": "^0.5.6",
-    "typescript": "^3.4.5",
+    "typescript": "^3.9.10",
     "zustand": "^3.5.10"
   }
 }
