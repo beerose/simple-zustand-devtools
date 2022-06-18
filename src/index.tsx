@@ -32,7 +32,11 @@ export function mountStoreDevtool(
   };
 
   (ZustandDevtool as any).displayName = `((${storeName})) devtool`;
-
+  
+  if (typeof document === 'undefined') {
+    return;
+  }
+  
   if (!rootElement) {
     let root = document.getElementById(`simple-zustand-devtools-${storeName}`);
     if (!root) {
