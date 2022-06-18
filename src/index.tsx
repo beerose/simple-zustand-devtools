@@ -48,7 +48,6 @@ export function mountStoreDevtool(
     if (!state) {
       return;
     }
-    // render(<ZustandDevtool {...state} />, rootElement!);
     newRoot.render(<ZustandDevtool {...state} />);
     externalUpdates.count += 1;
   };
