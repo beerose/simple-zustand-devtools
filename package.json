@@ -1,7 +1,7 @@
 {
   "name": "simple-zustand-devtools",
   "author": "Aleksandra Sikora",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
