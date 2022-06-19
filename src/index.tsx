@@ -1,15 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { createRoot } from 'react-dom/client';
-import { StoreApi } from 'zustand';
+import { UseStore } from 'zustand';
 
-type ZustandStore = StoreApi<Record<string | number | symbol, any>>;
-
-export function mountStoreDevtool(
+export function mountStoreDevtool<T extends object = Record<string | number | symbol, any>>(
   storeName: string,
-  store: ZustandStore,
+  store: UseStore<T>,
   rootElement?: HTMLElement
 ) {
-  type StoreState = ReturnType<ZustandStore['getState']>;
+  type StoreState = ReturnType<UseStore<T>['getState']>;
 
   const externalUpdates = {
     count: 0,
@@ -36,7 +34,7 @@ export function mountStoreDevtool(
   if (typeof document === 'undefined') {
     return;
   }
-  
+
   if (!rootElement) {
     let root = document.getElementById(`simple-zustand-devtools-${storeName}`);
     if (!root) {
