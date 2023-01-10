@@ -55,7 +55,7 @@ yarn add simple-zustand-devtools --dev
 Use [a release prior to 1.0.2](https://www.npmjs.com/package/simple-zustand-devtools?activeTab=versions) for React 17.
 
 ```sh
-npm install simple-zustand-devtools@1.0.2 --save-dev --legacy-peer-deps
+npm install simple-zustand-devtools@1.0.1 --save-dev --legacy-peer-deps
 ```
 
 ## Docs
